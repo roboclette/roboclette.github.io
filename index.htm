@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Robolette">
+<meta name="author" content="Sylvain Calinon">
+
+<title>Robolette</title>
+
+<!-- Comment from Andre, as test -->
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom fonts for this template
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+-->
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Open+Sans:700,400,300" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"><b>Robolette</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<!--
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#consortium">Consortium</a>
+        </li>
+      </ul>
+    </div>
+-->
+  </div>
+</nav>
+
+
+<header>
+  <div class="container text-center">
+    <!--<img width="60%" src="images/logo.jpg">-->
+    <p><h4>Roboclette</h4></p>
+  </div>
+</header>
+
+<!--
+<section id="project" class="bg-light">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 mx-auto">
+<h2>About the project</h2>
+<p>The acquisition of manipulation skills in robotics involves the combination of object recognition, action-perception coupling and physical interaction with the environment. Several learning strategies have been proposed to acquire such skills. As for humans and other animals, the robot learner needs to be exposed to varied situations. It needs to try and refine the skill many times, and/or needs to observe several attempts of successful movements by others to adapt and generalize the learned skill to new situations. Such skill is not acquired in a single training cycle, motivating the need to compare, share and re-use the experiments.</p>
+<p>In LEARN-REAL, we propose to learn manipulation skills through simulation for object, environment and robot, with an innovative toolset comprising: 1) a simulator with realistic rendering of variations allowing the creation of datasets and the evaluation of algorithms in new situations; 2) a virtual-reality interface to interact with the robots within their virtual environments, to teach robots object manipulation skills in multiple configurations of the environment; and 3) a web-based infrastructure for principled, reproducible and transparent benchmarking of learning algorithms for object recognition and manipulation by robots.</p>
+<p>These features will extend existing softwares in several ways. 1) and 2) will capitalize on the widespread development of realistic simulators for the gaming industry and the associated low-cost virtual reality interfaces. 3) will harness the existing <a href="https://www.beat-eu.org/" target="_BLANK">BEAT platform</a> developed at Idiap, which will be extended to object recognition and manipulation by robots, including the handling of data, algorithms and benchmarking results. As use case, we will study the scenario of vegetable/fruit picking and sorting.</p>
+
+<h4>Work plan</h4>
+
+<img src="images/WPs.png" class="img-fluid mx-auto d-block">
+
+<h5>3D graphics and physics engine</h5>
+<ul>
+<li>Selection of graphics and physics engine.</li>
+<li>Rendering various forms of realistic variations for robot manipulation tasks.</li>
+<li>Developing interfaces for researchers to link their robot models, algorithms with the simulator.</li>
+</ul>
+
+<h5>Reproducible research platform</h5>
+<ul>
+<li>Extending the existing <a href="https://www.beat-eu.org/" target="_BLANK">BEAT platform</a> to support workflows in robotics.</li>
+<li>Definition of evaluation protocols, assessment metrics and data storage.</li>
+<li>Developing evaluation benchmarks based on data produced in the context of LEARN-REAL.</li>
+</ul>
+
+<h5>Acquisition of manipulation data from demonstration</h5>
+<ul>
+<li>Learning from demonstration interface to help the robot acquire manipulation skills and create manipulation datasets.</li>
+<li>Augmented reality (AR) or virtual reality (VR) headset to let users reconfigure objects and scenes in the virtual environment (scaffolding the environment), and learning scenario settings (e.g., modifying joints reconfiguration by robot guidance).</li>
+<li>Evaluation baseline: kinesthetic teaching with Franka Emika's Panda robot equipped with a gripper and a RGB-D camera.</li>
+</ul>
+
+<h5>Generation of large-scale datasets</h5>
+<ul>
+<li>Toolset to generate synthetic RGB-D images of both textured and texture-less objects with a ground truth for scene understanding (i.e., objects, instances, and their 6D pose).</li>
+<li>Generating grasp positions of synthetic objects, with objects isolated or superposed with a varying level of occlusion.</li>
+<li>Use of multiple grippers, from simple parallel jaws to 3-finger hands.</li>
+</ul>
+
+<h5>Case study: recognition and manipulation of fruits/vegetables</h5>
+<ul>
+<li>Testing the developed toolchain within the case study of grasping fruits/vegetables.</li>
+<li>Recognition of objects and segmentation of their instances, estimation of their 3D pose, and object grasping and manipulation by exploiting compact representations of object-adaptive
+movement primitives.</li>
+<li>Domain adaptation to evaluate and correct the biases of synthetic data used for training w.r.t. real images observed by robots.</li>
+</ul>
+</section>
+
+<section id="publications" class="bg-light">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 mx-auto">
+<h2>Publications</h2>
+<p>
+<ul>
+<li>Thomas Duboudin, Maxime Petit and Liming Chen, <a href="https://www.researchgate.net/profile/Maxime_Petit4/publication/333929001_Toward_a_Procedural_Fruit_Tree_Rendering_Framework_for_Image_Analysis/links/5d0cd22892851cf4403eb3c8/Toward-a-Procedural-Fruit-Tree-Rendering-Framework-for-Image-Analysis.pdf" target="_BLANK"><b>Toward a Procedural Fruit Tree Rendering Framework for Image Analysis</b></a>, <i>7th Int. Workshop on Image Analysis Methods in the Plant Sciences (IAMPS), Lyon (France), 2019</i></li>
+    <ul><li><a href='publi/iamps2019/IAMPS_2019_poster.pdf'>Poster</a> and <a href='publi/iamps2019/IAMPS_2019_presentation.pdf'>Oral Presentation</a> </li>
+    <li>Code: <a href='https://github.com/tduboudi/IAMPS2019-Procedural-Fruit-Tree-Rendering-Framework'>https://github.com/tduboudi/IAMPS2019-Procedural-Fruit-Tree-Rendering-Framework</a></li>
+    </ul>
+</ul>
+</section>
+
+<section id="consortium">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12 mx-auto">
+	<h2>Consortium</h2>
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-4 text-center my-auto">
+		<a href="http://www.idiap.ch/en" target="_BLANK"><img src="images/Idiap.png" class="img-fluid"></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.iit.it/" target="_BLANK"><img src="images/IIT.png" class="img-fluid"></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.ec-lyon.fr/en" target="_BLANK"><img src="images/ECL.png" class="img-fluid"></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 text-center my-auto">
+		<a href="http://www.idiap.ch/en" target="_BLANK"><h5 class="mb-3">Idiap Research Institute</h5></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.iit.it/" target="_BLANK"><h5 class="mb-3">Italian Institute of Technology</h5></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.ec-lyon.fr/en" target="_BLANK"><h5 class="mb-3">École Centrale de Lyon</h5></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="http://calinon.ch/" target="_BLANK">Sylvain Calinon</a></p>
+		<p class="text-muted mb-0"><a href="http://andreanjos.org/" target="_BLANK">André Anjos</a></p>
+		<p class="text-muted mb-0"><a href="http://www.idiap.ch/~marcel/professional/Welcome.html" target="_BLANK">Sébastien Marcel</a></p>
+		</div>
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="https://www.linkedin.com/in/fei-chen-55662388/?originalSubdomain=it" target="_BLANK">Fei Chen</a></p>
+		<p class="text-muted mb-0"><a href="https://www.linkedin.com/in/andreaincertidelmonte/" target="_BLANK">Andrea Incerti Delmonte</a></p>
+		</div>
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="http://perso.ec-lyon.fr/liming.chen/" target="_BLANK">Liming Chen</a></p>
+		<p class="text-muted mb-0"><a href="https://www.researchgate.net/profile/Maxime_Petit4" target="_BLANK">Maxime Petit</a></p>
+		</div>
+	</div>
+
+	</div>
+	</div>
+</div>
+</div>
+</section>
+-->
+
+<!-- Footer <small><pre class="text-light" > -->
+<!--
+<footer class="py-5 bg-dark">
+<div class="container">
+<p class="text-light">
+Learn-Real is a collaborative project supported by <a href="http://www.snf.ch/en/Pages/default.aspx" target="_BLANK">SNSF</a> (Switzerland), <a href="http://www.miur.gov.it/" target="_BLANK">MIUR</a> (Italy), and <a href="http://www.agence-nationale-recherche.fr/en/" target="_BLANK">ANR</a> (France), through the <a href="http://www.chistera.eu/call-2017-announcement" target="_BLANK">ERA-NET CHIST-ERA 2017 Call ORMR</a> (Object recognition and manipulation by robots: Data sharing and experiment reproducibility).
+</p>
+<p class="text-muted">
+The Learn-Real logo can be generated from a Linux command line (if the Candice font is not available on your system, it can be replaced by another font):
+</p>
+<p style="font-size: x-small; line-height: 80%;"><code>
+convert -size 400x400 -virtual-pixel tile xc: +noise Random -blur 0x1 -channel G -evaluate add 40% -separate pattern.png<br>
+convert -size 1720x520 xc:white -font Candice -pointsize 288 -stroke black -strokewidth 100 -annotate +100+344 'Learn-Real' -blur 0x32 -resize 25% -ordered-dither o8x8,6 -resize 400% background.png<br>
+convert -size 1720x520 xc:none -font Candice -pointsize 288 -fill 'cmyka(100%,0%,0%,0%,0.8)' -stroke 'cmyka(100%,0%,0%,0%,0.8)' -strokewidth 40 -annotate +88+340 'Learn-Real' -channel RGBA -wave 8x40 c_layer.png<br>
+convert -size 1720x520 xc:none -font Candice -pointsize 288 -fill 'cmyka(0%,100%,0%,0%,0.8)' -stroke 'cmyka(0%,100%,0%,0%,0.8)' -strokewidth 40 -annotate +112+340 'Learn-Real' -channel RGBA -wave 8x40 m_layer.png<br>
+convert -size 1720x520 xc:none -font Candice -pointsize 288 -fill 'cmyka(0%,0%,100%,0%,0.8)' -stroke 'cmyka(0%,0%,100%,0%,0.8)' -strokewidth 40 -annotate +100+340 'Learn-Real' -channel RGBA -rotate -90 -wave 8x40 -rotate +90 y_layer.png<br>
+convert -size 1720x520 xc:none -font Candice -pointsize 288 -fill tile:pattern.png -stroke black -strokewidth 20 -annotate +100+344 'Learn-Real' -stroke none -annotate +100+344 'Learn-Real' -ordered-dither o8x8,6 foreground.png<br>
+convert \( c_layer.png null: m_layer.png -compose multiply -layers Composite \) null: y_layer.png -compose multiply -layers Composite cmy_layer.png<br>
+convert \( background.png null: cmy_layer.png -layers Composite \) null: foreground.png -layers Composite logo.png
+</code></p>
+<p class="text-muted">
+The use of a command line to generate the logo evokes the synthetic image rendering and reproducibility aspects of the project. It also alludes to the exploitation of existing tools in new contexts, as we do in Learn-Real through the use of the Beat platform for the benchmarking of robot manipulation tasks. The white noise texture and the superposed CMYK colored layers allude to the variational aspects, which are central to the learning aspects of the project. The dithered background evokes the rendering techniques employed in early video games, referring to the use in the project of engines (simulators) and interfaces (head-mounted displays) originating from the video game industry.
+</p>
+</div>
+</footer>
+-->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
