@@ -8,15 +8,13 @@
 
 <title>Roboclette</title>
 
-<!-- Comment from Andre, as test -->
-
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template
 <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 -->
-<link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Open+Sans:700,400,300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -53,18 +51,23 @@
 
 
 <header>
-  <div class="container text-center">
-    <img width="50%" src="images/roboclette-logo01.svg">
-    <!--<p><h4>Roboclette</h4></p>-->
-  </div>
+<div class="container text-center">
+<img width="80%" src="images/roboclette-logo01.svg" class="img-fluid mx-auto d-block">
+</div>
 </header>
 
+<section id="video" class="bg-light">
+<div class="container">
+<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w0in0Lr0FbU?cc_load_policy=1&loop=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+</section>
 
-<section id="project" class="bg-light">
+<section id="project">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 mx-auto">
-<h2>When A Robot Learns How To Make Traditional Swiss Raclette Thanks To AI</h2>
+
+<h2>When a robot learns how to make traditional Swiss raclette thanks to AI</h2>
 <p>It took the know-how of the cheese Master Eddy Baillifard, founder of Raclett'House, and the expertise of the Robot learning & interaction group from the Idiap research institute to achieve the first raclette made by a robot. Beyond the technical challenge, the project shows the potential of learning from demonstration techniques and for a better human-robot collaboration.</p>
 
 <p>The cheese master hand is quick and smooth: he applies a precisely controlled pressure on the melting cheese surface to let it land on the plate. Et voilà, the famous Swiss raclette! The gesture seems easy, but the know-how behind it is crucial. Every raclette enthusiast can testify how hard it is to master this apparently simple skill. “Depending on the type of raclette cheese, the surface can vary in terms of softness and can be more or less fluid,” says Eddy Baillifard, the Master and ambassador of the raclette cheese. Mimicking this skill with a robot isn't easy. To achieve this, Emmanuel Pignat, a PhD from the Idiap's robotic group used a novel approach: Eddy guided the robot's arm to let it record the movements and forces needed to perform the task. This learning technique allows to transfer skills from the human to the robot in an intuitive manner. The range of applications is wide, including industrial robots, service robots, and assistive robots. It relieves professionals of their most repetitive, dangerous or uncomfortable duties, in order to spend more time using their human skills, such as supervision, evaluation or decision making.</p>
@@ -77,10 +80,10 @@
 
 <p>This collaboration between the cheese Master and the researchers was supported by the whole Canton of Valais. The local authorities brought their financial support to this scientific research. The TTM company created a specific oven with a handle for the robot to grab the plate with the cheese. Nicolas Fontaine, a young local entrepreneur, facilitated the contacts between TTM, Raclett'House and Valais/Wallis Promotion which made the film. “When Nicolas Fontaine asked us for help, we immediately decided to help. This project highlights our strong belief about Valais: it's a unique territory mixing tradition and innovation. Both are represented by the best people and skills as illustrated in this short film,” says Alessandro Marcolin, marketing director of Valais/Wallis Promotion.</p>
 
-
-
-
-
+</div>
+</div>
+</div>
+</section>
 
 <!--
 <h2>More information</h2>
@@ -96,47 +99,6 @@ Raclett’House
 Raclette oven TTM
 Valais/Wallis Promotion
 
-<h4>Work plan</h4>
-
-<img src="images/WPs.png" class="img-fluid mx-auto d-block">
-
-<h5>3D graphics and physics engine</h5>
-<ul>
-<li>Selection of graphics and physics engine.</li>
-<li>Rendering various forms of realistic variations for robot manipulation tasks.</li>
-<li>Developing interfaces for researchers to link their robot models, algorithms with the simulator.</li>
-</ul>
-
-<h5>Reproducible research platform</h5>
-<ul>
-<li>Extending the existing <a href="https://www.beat-eu.org/" target="_BLANK">BEAT platform</a> to support workflows in robotics.</li>
-<li>Definition of evaluation protocols, assessment metrics and data storage.</li>
-<li>Developing evaluation benchmarks based on data produced in the context of LEARN-REAL.</li>
-</ul>
-
-<h5>Acquisition of manipulation data from demonstration</h5>
-<ul>
-<li>Learning from demonstration interface to help the robot acquire manipulation skills and create manipulation datasets.</li>
-<li>Augmented reality (AR) or virtual reality (VR) headset to let users reconfigure objects and scenes in the virtual environment (scaffolding the environment), and learning scenario settings (e.g., modifying joints reconfiguration by robot guidance).</li>
-<li>Evaluation baseline: kinesthetic teaching with Franka Emika's Panda robot equipped with a gripper and a RGB-D camera.</li>
-</ul>
-
-<h5>Generation of large-scale datasets</h5>
-<ul>
-<li>Toolset to generate synthetic RGB-D images of both textured and texture-less objects with a ground truth for scene understanding (i.e., objects, instances, and their 6D pose).</li>
-<li>Generating grasp positions of synthetic objects, with objects isolated or superposed with a varying level of occlusion.</li>
-<li>Use of multiple grippers, from simple parallel jaws to 3-finger hands.</li>
-</ul>
-
-<h5>Case study: recognition and manipulation of fruits/vegetables</h5>
-<ul>
-<li>Testing the developed toolchain within the case study of grasping fruits/vegetables.</li>
-<li>Recognition of objects and segmentation of their instances, estimation of their 3D pose, and object grasping and manipulation by exploiting compact representations of object-adaptive
-movement primitives.</li>
-<li>Domain adaptation to evaluate and correct the biases of synthetic data used for training w.r.t. real images observed by robots.</li>
-</ul>
-</section>
-
 <section id="publications" class="bg-light">
 <div class="container">
 <div class="row">
@@ -150,6 +112,7 @@ movement primitives.</li>
     </ul>
 </ul>
 </section>
+
 
 <section id="consortium">
 <div class="container">
@@ -205,6 +168,8 @@ movement primitives.</li>
 </section>
 -->
 
+
+
 <!-- Footer <small><pre class="text-light" > -->
 <!--
 <footer class="py-5 bg-dark">
@@ -232,6 +197,7 @@ The use of a command line to generate the logo evokes the synthetic image render
 </footer>
 -->
 
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -243,5 +209,4 @@ The use of a command line to generate the logo evokes the synthetic image render
 <script src="js/scrolling-nav.js"></script>
 
 </body>
-
 </html>

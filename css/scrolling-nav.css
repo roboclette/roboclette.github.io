@@ -18,14 +18,23 @@ section {
 	padding: 150px 0;
 }
 
-/*sly*/
+@font-face {
+    font-family: 'TTFirsNeueBold';
+    src: url('TTFirsNeueBold.woff2') format('woff2'),
+         url('TTFirsNeueBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*sly font-family: 'Dosis', sans-serif; font-weight: 800;*/
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	font-size: 30px;
+	font-family: 'TTFirsNeueBold';
+    font-weight: normal;
+    font-style: normal;
+	font-size: 26px;
 	color: black;
 }
