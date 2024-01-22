@@ -16,21 +16,17 @@ section {
 	padding: 150px 0;
 }
 
-@font-face {
-    font-family: 'TTFirsNeueBold';
-    src: url('TTFirsNeueBold.woff2') format('woff2'),
-         url('TTFirsNeueBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
 }
 
+.pmenu {
+	font-family: 'Dosis', sans-serif;
+}
+
 h2 {
-	font-family: 'TTFirsNeueBold';
+	font-family: 'Dosis', sans-serif;
     font-weight: normal;
     font-style: normal;
 	font-size: 26px;
